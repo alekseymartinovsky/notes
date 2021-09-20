@@ -1,0 +1,30 @@
+@import '../../colors.scss';
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+     
+
+    padding: 0px 10%;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background-color: $color_3;
+    min-height: calc(100vh - 110px);
+}
+
+.content::before,
+.content::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+@media (max-width: 700px) {
+  .content{
+    padding-top: 120px;
+    padding-bottom: 10px;
+    min-height: calc(100vh - 130px);
+  }
+}

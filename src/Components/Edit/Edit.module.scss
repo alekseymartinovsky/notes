@@ -1,0 +1,58 @@
+@import '../../colors.scss';
+
+.edit{
+    padding-top: 100px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.edit_butons{
+    border: none; 
+   display: flex;
+   outline: none;
+   justify-content: space-around;
+   padding-top: 20px;
+
+   div{
+       margin: 0;
+       background: $color_4;
+       height: 50px;
+       width: 100px;
+       display: flex;
+       transition: 0.5s;
+   }
+   a{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+}
+
+.edit_buttons_save:hover{
+   background: $color_7;
+}
+
+.edit_buttons_close:hover{
+   background: $color_1;
+}
+
+.tag{
+    color: $color_2;
+}
+
+.inp_title{
+    width: 100%;
+}
+
+.inp_editor{
+    border: 1px solid black;
+    min-height: 20em;
+}
+
+@media (max-width: 700px) {
+    .edit{
+        width: 90%;
+    }
+}

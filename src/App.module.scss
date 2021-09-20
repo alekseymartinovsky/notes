@@ -1,0 +1,10 @@
+.notFound{
+    padding-top: 100px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .notFound{
+        padding-top: 120px;
+    }
+}

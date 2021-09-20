@@ -1,0 +1,28 @@
+@import '../../colors.scss';
+
+.allTags{
+    padding-top: 80px;  
+    font-size: 16px;
+}
+
+.tags{
+    display: flex;
+    justify-content: center;
+    li{
+        color: $color_2;
+    }
+    h3{
+        margin: 0;
+        font-size: 16px;
+    }
+    ul{
+        margin: 0;  
+    }
+}
+
+@media (max-width: 700px) {
+    .allTags{
+        padding-top: 120px;
+        font-size: 16px;
+    }
+}

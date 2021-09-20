@@ -1,0 +1,9 @@
+
+[
+    {
+        "id": 0,
+        "title": "Starting note",
+        "text": "Create, edit, delete and find note!",
+        "tags": ["#start"]
+    }
+]
