@@ -57,7 +57,7 @@ function App() {
               }
             }
           </Route>
-          <Route path="/find/:tag">
+          <Route path="#/find/:tag">
             {
               () => {
                 let findedEl = [];
