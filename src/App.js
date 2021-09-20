@@ -1,3 +1,4 @@
+import { createHashHistory } from "history"
 import style from './App.module.scss';
 import Header from './Components/Header/Header';
 import Content from './Components/Content/Content';
@@ -8,6 +9,7 @@ import AllTags from './Components/AllTags/AllTags';
 
 function App() {
   let info;
+  const customHistory = createHashHistory()
 
   const getData = () => {
     if (localStorage.getItem('notes') !== null) {
@@ -21,7 +23,7 @@ function App() {
   getData();
 
   return (
-    <BrowserRouter>
+    <BrowserRouter history={customHistory}>
       <div className="App">
         <Header/>
         <Switch>
