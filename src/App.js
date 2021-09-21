@@ -1,4 +1,3 @@
-import { createHashHistory } from "history"
 import style from './App.module.scss';
 import Header from './Components/Header/Header';
 import Content from './Components/Content/Content';
@@ -9,7 +8,6 @@ import AllTags from './Components/AllTags/AllTags';
 
 function App() {
   let info;
-  const customHistory = createHashHistory()
 
   const getData = () => {
     if (localStorage.getItem('notes') !== null) {
@@ -23,7 +21,7 @@ function App() {
   getData();
 
   return (
-    <BrowserRouter history={customHistory}>
+    <BrowserRouter>
       <div className="App">
         <Header/>
         <Switch>
@@ -57,7 +55,7 @@ function App() {
               }
             }
           </Route>
-          <Route path="#/find/:tag">
+          <Route path="/find/:tag">
             {
               () => {
                 let findedEl = [];
