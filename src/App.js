@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import data from './data.json';
 import Edit from './Components/Edit/Edit';
 import AllTags from './Components/AllTags/AllTags';
+import { HashRouter } from 'react-router-dom'
 
 function App() {
   let info;
